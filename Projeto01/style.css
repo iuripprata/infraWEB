@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+
+$font: 'Rubik', sans-serif;
+$shadow:  0 7px 30px -10px rgba(150,170,180,0.5);
+$color: #4d61fc;
+$white: #fff;
+
+body {
+  background: #fff;
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+}
+form,
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+.estrutura {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 100%;
+ 
+  @media(max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+.btn {
+  align-items: center;
+  background: green;
+  border-radius: 3px;
+  border: 0;
+    color: black;
+ font-weight: bold;
+  color: $white;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 15px 45px;
+  transition: .2s;
+  &:hover {
+    background: #2036de;
+    transform: translateY(-2px);
+  }
+
+  .fas.fa-arrow-right {
+    color: black;
+    font-weight: bold;
+    color: white;
+    font-size: 12px;
+    line-height: 12px;
+    margin: 0 0 0 10px;
+
+  }
+}
+.register{
+  border-radius: 5px;
+  box-shadow: $shadow;
+  height: auto;
+  max-width: 400px;
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+
+  .fas {
+    color: green;
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+
+  strong {
+    color: green;
+    display: block;
+    font-size: 40px;
+  }
+  span {
+    color: green;
+  }
+
+  .create-account {
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+
+    strong {
+      font-size: 16px;
+      margin-left: 5px;
+      text-decoration: underline;
+    }
+  }
+}
+.register{
+  background: $white;
+
+  .form {
+    margin-top: 30px;
+    padding: 0 20px;
+
+    .form-row {
+      position: relative;
+      text-align: left;
+
+      .fas {
+        font-size: 15px;
+        position: absolute;
+        right: 10px;
+        top: 30px
+      }
+
+      &.bottom {
+        display: flex;
+        justify-content: space-between;
+
+        .forgot {
+          color: green;
+        }
+      }
+      &.button-login {
+        margin-top: 50px;
+        .fas {
+          position: static;
+        }
+      }
+     
+      // style checkbox remenber
+      .form-check {
+        input[type=checkbox] + label {
+          color: #555;
+          cursor: pointer;
+          display: block;
+        }
+       
+        input[type=checkbox] {
+          display: none;
+         
+        }
+        // style label input checkbox
+        input[type=checkbox] + label:before {
+          border-radius: 3px;
+          border: 1px solid #e2e2e2;
+          color: transparent;
+          content: "\2714";
+          display: inline-block;
+          height: 15px;
+          margin-right: 5px;
+          transition: .2s;
+          vertical-align: bottom;
+          width: 15px;
+          line-height: 16px;
+          font-size: 12px;
+          text-align: center;
+        }
+        // input active scale
+        input[type=checkbox] + label:active:before {
+          transform: scale(1.1);
+        }
+        // color input checked
+        input[type=checkbox]:checked + label:before {
+          background-color: $color;
+          border-color: $color;
+          color: $white;
+        }
+
+      }
+    }
+
+    .form-label {
+      color: #555;
+      font-size: 12px;
+     
+      select{
+        border-radius: 2px;
+        border: 0;
+        height: 40px;
+        margin-bottom: 0px;
+        padding: 0 40px 0 10px;
+        width: 100%;
+      }
+    }
+  }
+  .form-password,
+  .form-text
+  {
+    border-radius: 2px;
+    border: 0;
+    height: 40px;
+    margin-bottom: 5px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f1f1f1 no-repeat;
+    transition: 100ms all linear 0s;
+   
+    .option{border-radius: 2px;
+    border: 0;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 0 40px 0 10px;
+    width: 100%;
+    background: #f1f1f1 no-repeat;
+    transition: 100ms all linear 0s;}
+   
+  // style and effect focus inputs
+    background-image: linear-gradient( 109.6deg,  rgba(116,18,203,1) 11.2%, rgba(230,46,131,1) 91.2% );
+    background-size: 0 2px, 100% 1px;
+    background-position: 50% 100%, 50% 100%;
+// effect transition
+    transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+  // focus  active input
+    &:focus {
+      background-size: 100% 2px, 100% 1px;
+      outline: none;
+    }
+  }
+}
+
+
+
+.register {
+  transform: scale(1.01);
+  // background gradient create accound
+  background-image: linear-gradient( 109.6deg,  RGB(0,128,0) 11.2%, RGB(172, 249, 145)  91.2% );
+  .fas,
+  img {
+ max-width: 60%;
+}
+.logo {
+ text-align : center;
+}
+  strong {
+    color: $white;
+  }
+  .form {
+    .form-label {
+      color: $white;
+    }
+    .form-row {
+      .fas {
+        color: green;
+      }
+      .button-login {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .btn-login {
+    background: $white;
+    color: black;
+    font-weight: bold;
+
+    .fas.fa-arrow-right {
+      color: black;
+    }
+   
+    &:hover {
+      background: #2036de;
+      color: white;
+       .fas.fa-arrow-right {
+      color: white;
+    }
+    }
+  }
+
+  .create-account {
+    color: $white;
+  }
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: $font;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
