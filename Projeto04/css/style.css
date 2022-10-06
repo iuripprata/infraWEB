@@ -41,9 +41,9 @@
 /*# Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5)), url("img/Kingdom Hearts III.jpg") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5)), url("../img/spiderverse1.png") fixed center center;
   background-size: cover;
-  padding: 360px 0;
+  padding: 400px 0;
 }
 
 .cta h3 {
