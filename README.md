@@ -2,8 +2,9 @@
 
 ## Índice de Conteúdo
 - [Equipe](#equipe)
-- [Função](#funcao)
+- [Função](#função)
 - [Projetos](#projetos)
+- [Agradecimentos](#agradecimentos)
 
 ## Equipe
 
