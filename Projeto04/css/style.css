@@ -40,8 +40,17 @@
 
 /*# Cta
 --------------------------------------------------------------*/
+#games {
+  background: url("https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2020/04/cloud-dress-final-fantasy-7-remake.jpg") fixed center center;;
+  padding: 140px 0;
+}
+
+#spiderman {
+  background: url("../img/spiderverse1.png") fixed center center;;
+}
+
 .cta {
-  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5)), url("../img/spiderverse1.png") fixed center center;
+  background: linear-gradient(rgba(2, 2, 2, 0.1), rgba(0, 0, 0, 0.5));
   background-size: cover;
   padding: 400px 0;
 }
@@ -82,6 +91,12 @@
   border: solid rgba(0, 0, 0, .15);
   border-width: 1px 0;
   box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.logo {
+  max-width: 4%;
+  max-height: 4%;
+  padding: 0px 0px;
 }
 
 @media (min-width: 992px) {

@@ -1,0 +1,303 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+form,
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.estrutura {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .estrutura {
+    flex-wrap: wrap;
+  }
+}
+
+.btn {
+  align-items: center;
+  background: green;
+  border-radius: 3px;
+  border: 0;
+  color: black;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  padding: 15px 45px;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #2036de;
+  transform: translateY(-2px);
+}
+.btn .fas.fa-arrow-right {
+  color: black;
+  font-weight: bold;
+  color: white;
+  font-size: 12px;
+  line-height: 12px;
+  margin: 0 0 0 10px;
+}
+
+.register {
+  border-radius: 5px;
+  box-shadow: 0 7px 30px -10px rgba(150, 170, 180, 0.5);
+  height: auto;
+  max-width: 400px;
+  padding: 40px 15px;
+  text-align: center;
+  width: 100%;
+}
+.register .fas {
+  color: green;
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+.register strong {
+  color: green;
+  display: block;
+  font-size: 40px;
+}
+.register span {
+  color: green;
+}
+.register .create-account {
+  border-top: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+.register .create-account strong {
+  font-size: 16px;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.register {
+  background: #fff;
+}
+.register .form {
+  margin-top: 30px;
+  padding: 0 20px;
+}
+.register .form .form-row {
+  position: relative;
+  text-align: left;
+}
+.register .form .form-row .fas {
+  font-size: 15px;
+  position: absolute;
+  right: 10px;
+  top: 30px;
+}
+.register .form .form-row.bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.register .form .form-row.bottom .forgot {
+  color: green;
+}
+.register .form .form-row.button-login {
+  margin-top: 50px;
+}
+.register .form .form-row.button-login .fas {
+  position: static;
+}
+.register .form .form-row .form-check input[type=checkbox] + label {
+  color: #555;
+  cursor: pointer;
+  display: block;
+}
+.register .form .form-row .form-check input[type=checkbox] {
+  display: none;
+}
+.register .form .form-row .form-check input[type=checkbox] + label:before {
+  border-radius: 3px;
+  border: 1px solid #e2e2e2;
+  color: transparent;
+  content: "✔";
+  display: inline-block;
+  height: 15px;
+  margin-right: 5px;
+  transition: 0.2s;
+  vertical-align: bottom;
+  width: 15px;
+  line-height: 16px;
+  font-size: 12px;
+  text-align: center;
+}
+.register .form .form-row .form-check input[type=checkbox] + label:active:before {
+  transform: scale(1.1);
+}
+.register .form .form-row .form-check input[type=checkbox]:checked + label:before {
+  background-color: #4d61fc;
+  border-color: #4d61fc;
+  color: #fff;
+}
+.register .form .form-label {
+  color: #555;
+  font-size: 12px;
+}
+.register .form .form-label select {
+  border-radius: 2px;
+  border: 0;
+  height: 40px;
+  margin-bottom: 0px;
+  padding: 0 40px 0 10px;
+  width: 100%;
+}
+.register .form-password,
+.register .form-text {
+  border-radius: 2px;
+  border: 0;
+  height: 40px;
+  margin-bottom: 5px;
+  padding: 0 40px 0 10px;
+  width: 100%;
+  background: #f1f1f1 no-repeat;
+  transition: 100ms all linear 0s;
+  background-image: linear-gradient(109.6deg, rgb(116, 18, 203) 11.2%, rgb(230, 46, 131) 91.2%);
+  background-size: 0 2px, 100% 1px;
+  background-position: 50% 100%, 50% 100%;
+  transition: background-size 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
+}
+.register .form-password .option,
+.register .form-text .option {
+  border-radius: 2px;
+  border: 0;
+  height: 40px;
+  margin-bottom: 20px;
+  padding: 0 40px 0 10px;
+  width: 100%;
+  background: #f1f1f1 no-repeat;
+  transition: 100ms all linear 0s;
+}
+.register .form-password:focus,
+.register .form-text:focus {
+  background-size: 100% 2px, 100% 1px;
+  outline: none;
+}
+
+.register {
+  transform: scale(1.01);
+  background-image: linear-gradient(109.6deg, RGB(0, 128, 0) 11.2%, RGB(172, 249, 145) 91.2%);
+}
+.register .fas,
+.register img {
+  max-width: 60%;
+}
+.register .logo {
+  text-align: center;
+}
+.register strong {
+  color: #fff;
+}
+.register .form .form-label {
+  color: #fff;
+}
+.register .form .form-row .fas {
+  color: green;
+}
+.register .form .form-row .button-login {
+  margin-top: 20px;
+}
+.register .btn-login {
+  background: #fff;
+  color: black;
+  font-weight: bold;
+}
+.register .btn-login .fas.fa-arrow-right {
+  color: black;
+}
+.register .btn-login:hover {
+  background: #2036de;
+  color: white;
+}
+.register .btn-login:hover .fas.fa-arrow-right {
+  color: white;
+}
+.register .create-account {
+  color: #fff;
+}
+
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: "Rubik", sans-serif;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color: white;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div, .select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  background-color: white;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */
