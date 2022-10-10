@@ -1,10 +1,10 @@
 # Repositório de Programação WEB
 
 ## Índice de Conteúdo
-- [Equipe](#equipe)
-- [Versão](#versão)
-- [Projetos](#projetos)
-- [Agradecimentos](#agradecimentos-e-créditos)
+- [Equipe](##busts_in_silhouetteequipe)
+- [Versão](##information_sourceversão)
+- [Projetos](##clipboard-projetos)
+- [Agradecimentos](#1-agradecimentos-e-créditos)
 
 ## :busts_in_silhouette:	Equipe
 
