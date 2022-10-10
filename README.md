@@ -39,3 +39,8 @@ Dos 10 projetos necessários para a conclusão da nota da disciplina de programa
   - _Site com efeitos parallax onde se apresentam grandes séries animadas, filmes e jogos favoritos do time. Projeto criado com muito amor e intuito de estudar bastante._
 
 ## Agradecimentos e Créditos
+Agradecimentos e créditos ao Bootstrap por providenciar vários elementos dos nossos sites e garantir uma bela estrutura dos mesmos.
+Agradecimentos também aos templates estudados e usados destes sites:
+  - Start Bootstrap
+  - Bootstrap Made
+  - Remix Icons
