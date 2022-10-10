@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .inverter{
+        flex-direction: row-reverse;
+      }
+
+      @media (max-width: 920px){
+        section, .inverter{
+          flex-direction: column-reverse;
+        }
+
+        .column{
+          flex-direction: column;
+        }
+
+        .About-us{
+          text-align: center;
+        }
+      }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg text-bg-success p-3 col-12 fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="/imgs/if.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top img-thumbnail"> INFRAIF
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-team" aria-controls="navbar-team" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbar-team">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 simple-list-example-scrollspy">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#sobre">Sobre nós</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#claudiney">Claudiney</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#iuri">Iuri</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#gabriel">Gabriel</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#marina">Marina</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#yasmim">Yasmim</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main data-bs-spy="scroll" data-bs-target="#navbar-team" data-bs-offset="0" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+      
+      <section id="sobre" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-center align-items-center min-vh-100" 
+      style="background-color: #198754;">
+        <div class="col-6 text-left">
+          <h3 class="About-us">Sobre nós</h3>
+          <p>
+            A equipe é composta por estudantes do 8º período do curso Técnico Integrado em Informática, 
+            do Instituto Federal do Ceará - Campus Fortaleza. Temos como objetivo, desenvolver um site capaz de auxiliar o setor
+            de infraestrutura do campus, facilitando a localização de problemas por meio da interação com alunos.
+          </p>
+        </div>
+        <picture>
+          <img src="imgs/logo.png" class="img-fluid rounded-circle">
+        </picture>
+
+      </section>
+
+      <section id="claudiney" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-around align-items-center min-vh-100" 
+      style="background-color: rgba(122, 255, 140, 0.1);">
+
+        <div class="col-6 d-inline-block d-flex flex-md-column align-items-center column">
+          <h3 class="text-center">Claudiney Dutra</h3>
+          <p class="text-center">
+            Estudante do Instituto Federal que está cursando o último período do curso de tecnologia da informação. 
+            Atualmente, sua função principal em nosso projeto se mantém no Back End e coordenar os nossos programadores. 
+            Desse modo, Trabalhando em conjunto com a nossa equipe mantendo a organização e otimização do nosso código. 
+            Além de somar com seus conhecimentos em: Html; Css; JS; Java; PHP; Python para web.
+          </p>
+          <a href="http://www.github.com/ClaudineyDutra"><button class="btn btn-success mt-2">Github</button></a>
+        </div>
+        <picture>
+          <img src="imgs/claudiney.png" class="border border-3 img-fluid img-thumbnail rounded-circle">
+        </picture>
+      </section>
+
+      <section id="iuri" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-around align-items-center min-vh-100 inverter" 
+      style="background-color: rgba(122, 255, 140, 0.1);">
+        <div class="col-6 d-inline-block d-flex flex-md-column align-items-center column">
+        <h3 class="text-center">Iuri Prata</h3>
+        <p class="text-center">
+          Estudante do Instituto Federal que está cursando o último período do curso de tecnologia da informação. 
+          Atualmente, exercendo o papel de programador Full Stack para o desenvolvimento do nosso projeto. 
+          Desse modo, agregando ao nosso projeto com seus conhecimentos em: HTML; CSS;  JS; PYTHON.
+        </p>
+         <a href="http://www.github.com/iuripprata"><button class="btn btn-success mt-2">Github</button></a>
+        </div>
+        <picture>
+          <img src="imgs/iuri.png" class="border border-3 img-fluid img-thumbnail rounded-circle">
+        </picture>
+      </section>
+
+      <section id="gabriel" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-around align-items-center min-vh-100" 
+      style="background-color: rgba(122, 255, 140, 0.1);">
+        <div class="col-6 d-inline-block d-flex flex-md-column align-items-center column">
+          <h3 class="text-center">Gabriel Bento</h3>
+          <p class="text-center">
+            Estudante do Instituto Federal que está cursando o último período do curso de tecnologia da informação. 
+            Atualmente, exercendo o papel de Scrum Master e apurador de dados em nosso projeto.
+             Nesse sentido, agregando com sua coordenação e direção para a equipe visando um aproveitamento total de suas habilidades.
+             Assim, tornando a nossa jornada de trabalho prática e eficaz. Além disso, contribuindo com seus conhecimentos em: Html; JS; Css.
+
+
+          </p>
+          <a href="http://www.github.com/gabrielcosta"><button class="btn btn-success mt-2">Github</button></a>
+        </div>
+        <picture>
+          <img src="imgs/gabriel.png" class="border border-3 img-fluid img-thumbnail rounded-circle">
+        </picture>
+      </section>
+
+      <section id="marina" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-around align-items-center min-vh-100 inverter" 
+      style="background-color: rgba(122, 255, 140, 0.1);">
+        <div class="col-6 d-inline-block d-flex flex-md-column align-items-center column">
+        <h3 class="text-center">Marina Holanda</h3>
+        <p class="text-center">
+          Estudante do Instituto Federal que está cursando o último período do curso de tecnologia da informação. 
+          Atualmente, exercendo o papel de Front End. Desse modo, Trabalhando em conjunto com a nossa designer para agregar 
+          ao desenvolvimento do nosso projeto com suas competências em: HTML; JS;  CSS.
+        </p>
+        <a href="http://www.github.com/marinagsholanda"><button class="btn btn-success mt-2">Github</button></a>
+        </div>
+        <picture>
+          <img src="imgs/marina.png" class="border border-3 img-fluid img-thumbnail rounded-circle">
+        </picture>
+      </section>
+
+      <section id="yasmim" class="h-50 d-inline-block w-auto p-3 d-flex justify-content-around align-items-center min-vh-100" 
+      style="background-color: rgba(122, 255, 140, 0.1);">
+        <div class="col-6 d-inline-block d-flex flex-md-column align-items-center column">
+          <h3 class="text-center">Yasmim Torres</h3>
+          <p class="text-center">
+            Estudante do Instituto Federal que está cursando o último período do curso de tecnologia da informação. 
+            Atualmente, exercendo o papel de designer. Desse modo, Trabalhando com sua criatividade para agregar ao 
+            desenvolvimento estético do nosso projeto com suas competências em: Photoshop; Colorimetria; Html; JS;  CSS.
+          </p>
+          <a href="http://www.github.com/YasmimTss"><button class="btn btn-success mt-2">Github</button></a>
+        </div>
+        <picture>
+          <img src="imgs/yasmim.png" class="border border-3 img-fluid img-thumbnail rounded-circle">
+        </picture>
+      </section>
+
+    </main>
+    
+    <footer><!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
