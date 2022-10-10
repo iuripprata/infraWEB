@@ -1,4 +1,4 @@
-# Projeto 2: Página de Formulário :card_index:	
+# Projeto 2: Página de Login/Cadastro de E-mail :lock:
 
 ## Explicação
 Criamos o layout de uma página de login e cadastro, onde estão campos necessários para o preenchimento de dados do usuário.

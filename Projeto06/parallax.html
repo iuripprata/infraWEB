@@ -96,25 +96,34 @@
 </svg>
 
 <body>
-  <header class="p-3 bg-dark text-white">
-    <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kingdom_Hearts_logo.svg/389px-Kingdom_Hearts_logo.svg.png" class="logo"/>
-
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
-          <li><a href="#spiderverso" class="nav-link px-2 text-white">Spider-Man</a></li>
-          <li><a href="#anime" class="nav-link px-2 text-white">Anime</a></li>
-          <li><a href="#games" class="nav-link px-2 text-white">Games</a></li>
-        </ul>
-
-        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-          <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search">
-        </form>
-
-      </div>
-    </div>
-  </header>
+  <header>
+    <nav class="navbar navbar-expand-lg text-bg-dark p-3 col-12 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Kingdom_Hearts_logo.svg/389px-Kingdom_Hearts_logo.svg.png" alt="Logo" width="35" height="35" class="d-inline-block align-text-top"></img>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-team" aria-controls="navbar-team" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbar-team">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 simple-list-example-scrollspy">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#início">Início</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#spiderman">Spiderverso</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#anime">Anime</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#games">Games</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
   <main>
     <div class="container col-xxl-8 px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">

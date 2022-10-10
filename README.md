@@ -19,8 +19,8 @@
 [**@iuripprata**](https://github.com/iuripprata) - Programador Full-Stack
 
 ## :information_source:	Versão
-**Versão 1.5 do Projeto:**
-  Sites prontos e funcionando, apenas atualizando os textos relativos a apresentação de cada projeto individual.
+**Versão 2.0 do Projeto:**
+  Todos os 6 primeiros projetos funcionando e com arquivos explicativos.
 
 ## :clipboard: Projetos
 Dos 10 projetos necessários para a conclusão da nota da disciplina de programação WEB, fizemos 4, a maioria com a temática relacionada à nossa plataforma em atual criação: o InfraIF.
