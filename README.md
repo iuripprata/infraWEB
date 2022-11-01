@@ -37,6 +37,16 @@ Dos 10 projetos necessários para a conclusão da nota da disciplina de programa
   - _Portifólio pessoal e da equipe como um todo, apresentando links para nossos Githubs, um pouco sobre nós e o que cada um dos membros produz dentro do time._
 - [:pushpin:	**Site Parallax (score 25%)**](/Projeto06/readme.md)  :sparkle:
   - _Site com efeitos parallax onde se apresentam grandes séries animadas, filmes e jogos favoritos do time. Projeto criado com muito amor e intuito de estudar bastante._
+- [:pushpin:	**Página de Documentação Técnica (score 10%)**](/Projeto07/readme.md)  :page_with_curl:
+  - _Site onde se apresenta documentação explicativa sobre o uso de alguma plataforma, buscando informar por meio de textos, tabelas e menus as funcionalidades._
+- [:pushpin:	**Página de Blog ou Notícias (score 10%)**](/Projeto08/readme.md)  :newspaper:
+  - _Página formada por blocos de notícias e eventos escritos e atualizados em tempo real._
+- [:pushpin:	**Clonar um Site (score 15%)**](/Projeto09/readme.md)  :memo:
+  - _Escolha de 3 sites e a clonagem de 1 ao vivo durante a atividade.._
+- [:pushpin:	**Site de Fotografia (score 15%)**](/Projeto10/readme.md)  :camera_with_flash:
+  - _Projeto onde se apresenta diversos blocos de imagens apresentando as fotografias tiradas por alguém em formatos criativos._
+- [:pushpin:	**TO DO LIST (score 25%)**](/Projeto11/readme.md)  :ballot_box_with_check:
+  - _Site onde se cria uma lista de atividades com checkboxes para definir atividades terminadas ou não._
 
 ## :+1: Agradecimentos e Créditos
 Agradecimentos e créditos ao Bootstrap, por providenciar vários elementos dos nossos sites e garantir uma bela estrutura dos mesmos, e também aos templates estudados e usados destes sites:
