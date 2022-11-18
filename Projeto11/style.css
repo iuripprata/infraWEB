@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap');
+
+h1, h3{ 
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+.task{
+    width: 50%;
+    padding: 5px;
+    border-radius: 8px;
+    margin-right: 16px;
+}
+
+.btn{
+    border-color: white;
+    color: white;
+}
+
+.form-check-input:hover{
+    cursor: pointer;
+}
+
+.fa-trash{
+    color: red;
+}
+
+.fa-check{
+    color: green;
+}
