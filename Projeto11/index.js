@@ -1,5 +1,7 @@
 let id_task = 0
 let btnAddTask = document.getElementById('task')
+let taskBtn = document.getElementById('task-btn')
+
 
 
 btnAddTask.addEventListener('keypress', function(e){
@@ -10,6 +12,9 @@ btnAddTask.addEventListener('keypress', function(e){
 
 
 function AddTask() {
+    const taskAdd = document.getElementById('task-add-toast')
+    const toastAdd = new bootstrap.Toast(taskAdd)
+
     let valueTask = document.getElementById("task").value
     if (valueTask != ""){
         let element = document.createElement("div")
@@ -24,6 +29,7 @@ function AddTask() {
         `
         document.getElementById("task-todo").appendChild(element)
         id_task++
+        toastAdd.show()
     }
 }
 
@@ -53,5 +59,10 @@ function checkDone(id_task) {
         element.children[0].style.background = "#008F8C"
         element.children[0].style.color = "white"
         element.children[1].hidden = true
+
+        const taskDone = document.getElementById('task-done-toast')
+        const toastDone = new bootstrap.Toast(taskDone)
+
+        toastDone.show()
     }
 }
