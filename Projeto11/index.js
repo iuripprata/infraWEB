@@ -66,3 +66,17 @@ function checkDone(id_task) {
         toastDone.show()
     }
 }
+
+window.addEventListener('resize', function () {
+    //var altura = window.innerHeight;
+    let largura = window.innerWidth;
+    let containerTasks = this.document.getElementById('container-tasks')
+
+    if (largura <= 960) {
+        containerTasks.setAttribute('class', 'column')
+        containerTasks.removeAttribute('row')
+    }else{
+        containerTasks.setAttribute('class', 'row')
+        containerTasks.removeAttribute('column')
+    }
+});
