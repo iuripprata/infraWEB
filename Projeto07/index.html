@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>DevDocs - Bootstrap Documentation Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/highlight/default.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+
+    <!-- Sidebar Start -->
+    <button class="btn btn-lg btn-primary btn-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSidebar" aria-controls="offcanvasSidebar">
+        <i class="fa fa-bars"></i>
+    </button>
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasSidebar"
+        aria-labelledby="offcanvasSidebarLabel">
+        <div class="offcanvas-header border-bottom">
+            <h2 class="fw-bold mb-0"><i class="fa fa-code me-2"></i>DevDocs</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="flex-shrink-0 bg-white">
+                <ul class="list-unstyled ps-0">
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#home-collapse" aria-expanded="true">
+                            👤 Contas
+                        </button>
+                        <div class="collapse show" id="home-collapse">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#section-1-1" class="text-body rounded">Cadastro</a></li>
+                                <li><a href="#section-1-2" class="text-body rounded">Conta de Usuário</a></li>
+                                <li><a href="#section-1-3" class="text-body rounded">Conta de Admnistrador</a></li>
+                                <li><a href="#section-1-4" class="text-body rounded">Tipos de Admnistradores</a></li>
+                                <li><a href="#section-1-5" class="text-body rounded">Altearação de Dados</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-2" aria-expanded="false">
+                            🌐 Plataforma
+                        </button>
+                        <div class="collapse" id="collapse-2">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#section-2-1" class="text-body rounded">Atualizações</a></li>
+                                <li><a href="#section-2-2" class="text-body rounded">Centrais de Mídias</a></li>
+                                <li><a href="#section-2-3" class="text-body rounded">Tela Inicial</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-3" aria-expanded="false">
+                            📂 Ocorrências
+                        </button>
+                        <div class="collapse" id="collapse-3">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#section-3-1" class="text-body rounded">Título e Descrição</a></li>
+                                <li><a href="#section-3-2" class="text-body rounded">Prioridade, Hora e Frequência</a></li>
+                                <li><a href="#section-3-3" class="text-body rounded">Status e Setor</a></li>
+                                <li><a href="#section-3-4" class="text-body rounded">Demandante e Atendente</a></li>
+                                <li><a href="#section-3-5" class="text-body rounded">Base de Conhecimento</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapse-5" aria-expanded="false">
+                            📈 Dashboard
+                        </button>
+                        <div class="collapse" id="collapse-5">
+                            <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                <li><a href="#section-4-1" class="text-body rounded">Gráficos Diários</a></li>
+                                <li><a href="#section-4-2" class="text-body rounded">Dados de Usuários</a></li>
+                                <li><a href="#section-4-3" class="text-body rounded">Dados Mensais</a></li>
+                                <li><a href="#section-4-4" class="text-body rounded">Dados Semestrais</a></li>
+                                <li><a href="#section-4-5" class="text-body rounded">Dados Financeiros</a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="mb-1">
+                        <a class="btn w-100 text-start" href="#section-end">Section Iten End</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="offcanvas-footer border-top text-center mt-auto p-3">
+			<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+			<small>Inspired by a design from <a href="https://htmlcodex.com">HTML Codex</a>
+            </small>
+        </div>
+    </div>
+    <!-- Sidebar End -->
+
+    <!-- Hero Start -->
+    <div class="container-fluid bg-primary py-5 mb-5">
+        <div class="row py-5">
+            <div class="col-12 text-center">
+                <h1 class="display-1 fw-bold text-white mb-4"><i class="fa fa-code me-2"></i>DevDocs</h1>
+                <h3 class="fw-bold text-white mb-3">Bootstrap 5 Documentation Template</h3>
+                <h5 class="fw-bold text-white mb-3">Designed by <a class="text-white" href="https://htmlcodex.com">HTML Codex</a></h5>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+    <!-- Section Start -->
+    <div class="container py-5">
+        <h1 class="fw-bold display-4">👤 Contas</h1>
+        <p>Tudo sobre os tipos de contas, permissões e diferenças entre cada uma das variações de possíveis perfis.</p>
+
+        <h2 id="section-1-1" class="fw-bold mt-5">Cadastro</h2>
+        <p>O cadastro de contas pode ser realizado por uma página de cadastro onde os dados podem mudar caso seja um servidor se cadastrando, ou, por ventura, um aluno.</p>
+        <h5 class="fw-bold">Realizando Cadastro</h5>
+        <p>Na página de cadastro pode-se observar que algumas informações importantes são requisistadas, como por exemplo a matrícula ou número de identificação do servidor, selecionando devidamente o que mais encaixa na sua situação. Os dados que são requisistados então são:</p>
+        <p class="text-success">Nome</p>
+        <p class="text-success">Identificação</p>
+        <p class="text-success">E-Mail</p>
+        <p class="text-success">Telefone</p>
+        <p class="text-success">Senha</p>
+        <p class="text-success">Confirme Senha</p>
+        <p>Agora que você colocou todos os dados, pode confirmar o cadastro e assim vamos prosseguir explicando as diferenças entre os tipos de conta existentes.</p>
+
+        <h2 id="section-1-2" class="fw-bold mt-5">Conta de Usuário</h2>
+        <p>As contas de usuário são reservadas a professores e alunos do IFCE que não desempenham nenhuma função admnistrativa ou atividade de manutenção, representação de turmas e cursos. 
+            São contas simples que possuem apenas permissões simples dentro do sistema.</p>
+        <p> Entre suas capacidades estar a de criar chamados na plataforma, poder olhar os chamados que foram resolvidos e receber avisos sobre chamados abertos que são de urgência máxima ou que
+            afetem algum dos sistemas hidráulicos, elétricos ou estruturais do instituto, que necessitem de parar certas áreas etc. Os alunos também poderão contribuir com pesquisas trimestrais
+            sobre o uso e melhorias na plataforma.
+        </p>
+        
+        <h2 id="section-1-3" class="fw-bold mt-5">Conta de Admnistrador</h2>
+        <p>Contas de Admnistrador são destinadas a membros do setor de manutenção além de servidores que cuidam da gerência do instituto: Coordenadores, Diretor, Reitor entre alguns outros cargos
+            admnistrativos.</p>
+        <p> Suas funções e capacidades dentro da plataforma são variadas, podendo-se citar visualização de chamadas e todas as informações destas, designação de profissionais para resolução do problema,
+             visualização do Dashboard e os gráficos e dados nele contidos, alteração de dados e situação de chamados  além de poder criar avisos para todos.</p>      
+        <div class="callout callout-primary rounded">
+            <h5 class="fw-bold text-primary"><i class="fa fa-info-circle me-2"></i>Atribuições de Admnistradores</h5>
+            Com todo o potencial que a conta oferece, deve-se entender o dever que se tem para com a plataforma e todo o trabalho nela existente. Admnistradores devem sempre buscar atribuir a resolução de
+            chamados a algum trabalhador da manutenção o mais rápido possível e analisar a situação enviando avisos para os alunos e servidores se necessário além de recolher os dados durante todo período
+            de análise das melhorias.
+        </div>
+         
+        <h5 class="fw-bold">File Structure</h5>
+        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <pre>
+            <code>
+Product_folder/
+├── css/
+│   ├── all .css files
+├── img/
+|   ├── all .jpg, .png files
+├── js/
+│   ├── all .js files
+├── lib/
+│   ├── all library folder/
+├── scss/
+|   ├── all .scss files
+├── all .html files
+            </code>
+        </pre>
+
+        <h2 id="section-1-4" class="fw-bold">Tipos de Admnistrador</h2>
+        <p>Existem alguns tipos de admnistradores e cada um dele possui poderes e capacidades diferentes.</p>
+        <div class="p-3 mb-2 bg-primary text-white"><strong>Diretor, Reitor e Coordenadores de Cursos:</strong><br><br>
+            Criar chamados;<br>
+            Enviar avisos;<br>
+            Atribuir trabalhadores;<br>
+            Analisar ocorrências;<br>
+            Acesso ao Dashboard;<br>
+            Analisar dados;<br>
+            Acesso a dados financeiros;<br>
+            Participar das pesquisas;<br>
+        </div>
+        <div class="p-3 mb-2 bg-secondary text-white"><strong>Coordenador do Setor de Manutenção:</strong><br><br>
+            Criar ocorrências;<br>
+            Enviar avisos;<br>
+            Atribuir trabalhadores;<br>
+            Analisar ocorrências;<br>
+            Acesso ao Dashboard;<br>
+            Analisar dados;<br>
+            Acesso a dados financeiros;<br>
+            Modificar ocorrências;<br>
+            Participar das pesquisas;<br>
+        </div>
+        <div class="p-3 mb-2 bg-success text-white"><strong>Servidores do Setor de Manutenção:</strong><br><br>
+            Criar ocorrências;<br>
+            Enviar avisos;<br>
+            Analisar ocorrências;<br>
+            Acesso ao Dashboard;<br>
+            Modificar ocorrências;<br>
+            Participar das pesquisas;<br>
+        </div>
+        <div class="p-3 mb-2 bg-danger text-white"><strong>Representantes de Turmas e Curso:</strong><br><br>
+            Criar ocorrências;<br>
+            Analisar ocorrências;<br>
+            Participar das pesquisas;<br>
+            Analisar dados;<br>
+        </div>
+        <div class="p-3 mb-2 bg-warning text-dark"><strong>Alunos, Professores e outros Servidores;</strong><br><br>
+            Criar ocorrências;<br>
+            Ver ocorrências;<br>
+            Participar das pesquisas;<br>
+        </div>
+
+
+        <h2 id="section-1-5" class="fw-bold">Alteração de Dados</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Callout</h5>
+        <p>Callout example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <div class="callout callout-primary rounded">
+            <h5 class="fw-bold text-primary"><i class="fa fa-info-circle me-2"></i>Note</h5>
+            Callout example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.
+        </div>
+        <div class="callout callout-secondary rounded">
+            <h5 class="fw-bold text-secondary"><i class="fa fa-info-circle me-2"></i>Note</h5>
+            Callout example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.
+        </div>
+    </div>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <div class="container py-5">
+        <h1 class="fw-bold display-4">🌐 Plataforma</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-2-1" class="fw-bold mt-5">Atualizações</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Alerts</h5>
+        <p>Alerts example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+            <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+            </symbol>
+            <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </symbol>
+            <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+                <path
+                    d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </symbol>
+        </svg>
+
+        <div class="alert alert-primary d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:">
+                <use xlink:href="#info-fill" /></svg>
+            <div>
+                An example alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-success d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
+                <use xlink:href="#check-circle-fill" /></svg>
+            <div>
+                An example success alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-warning d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
+                <use xlink:href="#exclamation-triangle-fill" /></svg>
+            <div>
+                An example warning alert with an icon
+            </div>
+        </div>
+        <div class="alert alert-danger d-flex align-items-center" role="alert">
+            <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Danger:">
+                <use xlink:href="#exclamation-triangle-fill" /></svg>
+            <div>
+                An example danger alert with an icon
+            </div>
+        </div>
+
+        <h2 id="section-2-2" class="fw-bold mt-5">Centrais de Mídias</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Tables</h5>
+        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2 id="section-2-3" class="fw-bold mt-5">Tela Inicial</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Buttons</h5>
+        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <div class="mb-4">
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
+            <button type="button" class="btn btn-link">Link</button>
+        </div>
+        <div class="mb-4">
+            <button type="button" class="btn btn-outline-primary">Primary</button>
+            <button type="button" class="btn btn-outline-secondary">Secondary</button>
+            <button type="button" class="btn btn-outline-success">Success</button>
+            <button type="button" class="btn btn-outline-danger">Danger</button>
+            <button type="button" class="btn btn-outline-warning">Warning</button>
+            <button type="button" class="btn btn-outline-info">Info</button>
+            <button type="button" class="btn btn-outline-light">Light</button>
+            <button type="button" class="btn btn-outline-dark">Dark</button>
+        </div>
+        <div class="pb-3">
+            <button type="button" class="btn btn-primary btn-lg">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <button type="button" class="btn btn-primary btn-sm">Small button</button>
+            <button type="button" class="btn btn-secondary btn-sm">Small button</button>
+        </div>
+
+        <h2 id="section-2-4" class="fw-bold mt-5">Section Item 2.4</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Progress</h5>
+        <p>File structure example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10"
+                aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%"
+                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <div class="progress mb-4">
+            <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%"
+                aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+
+        <h2 id="section-2-5" class="fw-bold mt-5">Section Item 2.5</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+        <h5 class="fw-bold">Images</h5>
+        <p>Images example. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui.</p>
+        <img class="img-fluid mb-4" src="img/responsive.jpg" alt="Image">
+        <div class="row">
+            <div class="col-lg-3 col-md-6">
+                <img class="img-fluid rounded mb-4" src="img/rounded.jpg" alt="Image">
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img class="img-fluid img-thumbnail mb-4" src="img/thumbnail.jpg" alt="Image">
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img class="img-fluid rounded-circle mb-4" src="img/circle.jpg" alt="Image">
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <img class="img-fluid rounded-pill mb-4" src="img/pill.jpg" alt="Image">
+            </div>
+        </div>
+    </div>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <div class="container py-5">
+        <h1 class="fw-bold display-4">📂 Ocorrências</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-3-1" class="fw-bold mt-5">Título e Descrição</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-3-2" class="fw-bold mt-5">Prioridade, Hora e Frequência</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-3-3" class="fw-bold mt-5">Status e Setor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-3-4" class="fw-bold mt-5">Demandante e Atendente</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-3-5" class="fw-bold mt-5">Base de Conhecimento</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+    </div>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <div class="container py-5">
+        <h1 class="fw-bold display-4">📈 Dados</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-4-1" class="fw-bold mt-5">Gráficos Diários</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-4-2" class="fw-bold mt-5">Dados de Usuários</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-4-3" class="fw-bold mt-5">Dados Mensais</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-4-4" class="fw-bold mt-5">Dados Semestrais</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+
+        <h2 id="section-4-5" class="fw-bold mt-5">Dados Financeiros</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+    </div>
+    <!-- Section End -->
+
+    <!-- Section Start -->
+    <div class="container py-5">
+        <h1 id="section-end" class="fw-bold display-4">Section Item End</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies turpis non dictum consectetur. Suspendisse potenti. Mauris non felis dui. Phasellus ultrices diam a mollis tincidunt. Sed vulputate leo at magna semper blandit. Sed ultricies aliquam neque, bibendum finibus ante finibus aliquam. Pellentesque et justo quis urna volutpat dignissim. Suspendisse ut neque odio ante ipsum primis in faucibus orci luctus.</p>
+    </div>
+    <!-- Section End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary rounded back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/highlight/highlight.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

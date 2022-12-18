@@ -53,3 +53,4 @@ Agradecimentos e créditos ao Bootstrap, por providenciar vários elementos dos 
   - Start Bootstrap
   - Bootstrap Made
   - Remix Icons
+  - HTML Codex
