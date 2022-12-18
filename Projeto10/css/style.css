@@ -1,0 +1,104 @@
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(5, 107, 18, 0.799);
+  border: solid rgba(1, 92, 34, 0.82);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(12, 110, 3, 0.906), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.form-control-dark {
+  color: rgb(6, 110, 41);
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: rgba(2, 114, 0, 0.541);
+  background-color: var(--bs-dark);
+  border-color: rgba(3, 95, 38, 0.829);
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+
+/*# Cta
+--------------------------------------------------------------*/
+#games {
+  background: url("/Projeto10/img/IFCE3.png") fixed center center;;
+  padding: 140px 0;
+}
+
+#spiderman{
+  background: url("https://diariodonordeste.verdesmares.com.br/image/contentid/policy:1.3146234:1633874145/IFCE.jpg?f=16x9&h=720&q=0.8&w=1280&$p$f$h$q$w=b453bb4") fixed center center;;
+}
+
+.cta {
+  background: linear-gradient(rgba(3, 120, 48, 0.861), rgba(3, 137, 19, 0.728));
+  background-size: cover;
+  padding: 400px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 4px;
+  transition: 0.5s;
+  margin-top: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #00c1c1;
+  border: 2px solid #00c1c1;
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(8, 132, 6, 0.413);
+  border: solid rgba(4, 152, 19, 0.534);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(1, 94, 14, 0.863), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.logo {
+  max-width: 4%;
+  max-height: 4%;
+  padding: 0px 0px;
+}
+
+@media (min-width: 992px) {
+  .rounded-lg-3 { border-radius: .3rem; }
+}
