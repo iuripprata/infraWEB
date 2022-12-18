@@ -6,4 +6,4 @@ Ele foi criado para apresentar as fots com um efeito parallax onde rolando pelas
 ![Cloud FF7R](https://s1.static.brasilescola.uol.com.br/be/vestibular/-5b718ba999d37.jpg)
 
 ## Criação
-Criado com Bootstrap para a parte visual do projeto e utilizando as informações apuradas ao longo do trabalho..
+Criado com Bootstrap para a parte visual do projeto e utilizando as informações apuradas ao longo do trabalho.
