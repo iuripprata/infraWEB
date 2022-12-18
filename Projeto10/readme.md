@@ -1,11 +1,9 @@
-# Projeto 6: Site Parallax :sparkle:
+# Projeto 10: Site de Fotos:
 
 ## Explicação
-Criada para apresentar o efeito parallax onde rolando pelas seções do site têm-se a visão das imagens passando por detrás do conteúdo da página.
+Ele foi criado para apresentar as fots com um efeito parallax onde rolando pelas seções do site têm-se a visão das imagens passando por detrás do conteúdo da página. Assim como, a apresentação por fotos do instituto, Infra IF e a situação das reformas na instituição.
 
-![Cloud FF7R](https://d1lss44hh2trtw.cloudfront.net/assets/editorial/2020/04/cloud-dress-final-fantasy-7-remake.jpg)
-
-Feita para diversão e treino com inspiração nos games e animações amadas pelo grupo para apresentar o aprendizado sobre tal efeito parallax.
+![Cloud FF7R](https://s1.static.brasilescola.uol.com.br/be/vestibular/-5b718ba999d37.jpg)
 
 ## Criação
-Criado do zero utilizando o framework Bootstrap para a parte visual do projeto.
+Criado com Bootstrap para a parte visual do projeto e utilizando as informações apuradas ao longo do trabalho..
