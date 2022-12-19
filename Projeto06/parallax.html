@@ -11,6 +11,10 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
   
   <link href="css/style.css" rel="stylesheet" />
 
@@ -154,22 +158,27 @@
       </div>
     </section><!-- End Cta Section -->
 
-    <div class="container px-4 py-5" id="trending">
-      <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="..." class="img-fluid rounded-start" alt="...">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-            </div>
-          </div>
-        </div>
+    <div class="container mt-3">
+      <div class="col-lg-6">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Obras do Momento!</h1>
+        <p class="lead">Graças a API do TheMovieDB podemos catalogar aqui as obras do momento que estão bombando nos cinemas e nas telinhas.</p>
+      </div>
+      <div class="row movies">
+        <!-- Movies will be loaded into this space -->
       </div>
     </div>
+  
+    <script type="text/javascript">
+      var api_key = "83b15094cfe66c75e6f88eca7fc67724"; //TODO insert your unique API KEY here
+      var api_url = "https://api.themoviedb.org/3/trending/all/week?api_key=" + api_key;
+      $.getJSON( api_url, function( data ) {
+  
+        $.each( data.results, function( i, item ) {
+          var posterFullUrl = "https://image.tmdb.org/t/p/w185//" + item.poster_path;
+          $("<div class='card mb-3' style='max-width: 240px;'><img src='" + posterFullUrl + "'><h5>" + item.title + "</h5></div>").appendTo(".movies");
+        });
+      });
+    </script>
 
   <div class="bg-dark text-secondary px-4 py-5 text-center">
     <div class="py-5">
@@ -328,6 +337,7 @@
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
   </script>
   <script type="text/html" src="js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
