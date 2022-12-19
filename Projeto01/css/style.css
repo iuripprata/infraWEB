@@ -301,3 +301,8 @@ fieldset {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+.button-menu{
+  display: flex;
+  justify-content: center;
+}
