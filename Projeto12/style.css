@@ -1,0 +1,121 @@
+.logo{
+    width: 120px;
+    height: 40px;
+
+    margin-top: 25px;
+    padding-left: 15px ;
+}
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-perfil{
+    width: 30px;
+    height: 30px;
+}
+
+.perfil-img{
+    width: 100%;
+    height: 100%;
+}
+
+.nome-item{
+    padding: 5px;
+}
+
+.item{
+    padding: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.item:hover{
+    background: linear-gradient(to right, rgb(213, 212, 212), rgb(241, 240, 240) );
+    border-radius: 32px;
+}
+
+.item span{
+    margin-left: 15px;
+}
+
+.items{
+    padding-left: 15px;
+}
+
+.posts-container{
+    max-width: 80vw;
+    min-height: 100vh;
+    margin-left: 200px;
+}
+
+.storys{
+    min-width: 400px;
+    min-height: 70px;
+
+    max-width: 400px;
+    max-height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.story{
+    width: 70px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.container-story{
+    width: 50px;
+    height: 50px;
+}
+
+.n, .d{
+    cursor: pointer;
+}
+
+.n:hover{
+    padding: 2px;
+}
+
+.imagem-post{
+    margin-top: 10px;
+    width: 400px;
+    height: 600px;
+}
+
+.imagem-post img{
+    width: 100%;
+    height: 100%;
+}
+
+.container-img-post{
+    width: 20px;
+    height: 20px;
+}
+
+.extra{
+    margin-left: 15px;
+    /* background: green; */
+    min-width: 300px;
+    max-width: 300px;
+
+    min-height: 500px;
+    max-height: 500px;
+}
+
+.container-perfil-extra{
+    width: 70px;
+    height: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pit{
+    font-size: 13px;
+}

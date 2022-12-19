@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="mw-100">
+    <main>
+        <!-- NAVBAR -->
+        <div class="col-2 min-vh-100 max-vh-100 d-flex flex-column justify-content-around fixed-bottom border">
+            <div class="logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/1280px-Instagram_logo.svg.png" alt=""> 
+            </div>
+
+            <div class="items">
+                <div class="item">
+                    <i class="fa-solid fa-house fa-2x"></i>
+                    <a href="#" class="nome-item fs-5 fw-light text-dark">Página Inicial</a> 
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    <span class="nome-item fs-6 fw-light">Pesquisa</span> 
+                </div>
+                <div class="item">
+                    <i class="fa-regular fa-compass fa-2x" width="25px"></i>
+                    <span class="nome-item fs-6 fw-light">Explorar</span> 
+                </div>
+                <div class="item">
+                    <i class="fa-solid fa-clapperboard fa-2x"></i>
+                    <span class="nome-item fs-6 fw-light">Reels</span> 
+                </div>
+                <div class="item">
+                    <i class="fa-brands fa-facebook-messenger fa-2x"></i>
+                    <span class="nome-item fs-6 fw-light">Mensagens</span> 
+                </div>
+                <div class="item">
+                    <i class="fa-regular fa-heart fa-2x"></i>
+                    <span class="nome-item fs-6 fw-light">Notificações</span> 
+                </div>
+                <div class="item">
+                    <i class="fa-regular fa-square-plus fa-2x"></i>
+                    <span class="nome-item fs-6 fw-light">Criar</span> 
+                </div>
+                <div class="d-flex item">
+                    <div class="container-perfil">
+                        <img class="rounded-circle perfil-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj95dVNObz0OyGHbJezMkrLsmzZTuyijI47w&usqp=CAU" alt="">
+                    </div>
+                    <span class="nome-item fs-6 fw-light">Perfil</span> 
+                </div>
+            </div>
+
+            <div class="d-flex ms-3">
+                <i class="fa-solid fa-bars fa-2x n"></i>
+                <span class="ms-3 fs-5 fw-light">Mais</span>
+            </div>
+        </div>
+
+        <!-- POSTS -->
+        <div class="col min-vh-100 posts-container mt-3 d-flex justify-content-center">
+            <div class="d-flex flex-column ">
+                <section class="storys bg-light">
+                    <div class="story">
+                        <div class="container-story">
+                            <img class="rounded-circle perfil-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj95dVNObz0OyGHbJezMkrLsmzZTuyijI47w&usqp=CAU" alt="">
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="container-story">
+                            <img class="rounded-circle perfil-img" src="https://ef564920920608e03abb-7d34ef097b6ab6c586dfc84157128505.ssl.cf1.rackcdn.com/PostImagem/36734/foto-de-perfil-profissional_o1eh30s23km6j1lmm1k5r8cvinuj.JPG" alt="">
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="container-story">
+                            <img class="rounded-circle perfil-img" src="https://www.wefashiontrends.com/wp-content/uploads/2019/03/pose-para-fotos-de-perfil.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="container-story">
+                            <img class="rounded-circle perfil-img" src="https://img.a.transfermarkt.technology/portrait/big/68290-1669394812.jpg?lm=1" alt="">
+                        </div>
+                    </div>
+                    <div class="story">
+                        <div class="container-story">
+                            <img class="rounded-circle perfil-img" src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="posts mt-3 border pb-2 pt-1">
+                    <div class="post">
+                        <div class="cabecalho d-flex justify-content-between flex-column">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex ms-2">
+                                    <div class="container-perfil">
+                                        <img class="rounded-circle perfil-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj95dVNObz0OyGHbJezMkrLsmzZTuyijI47w&usqp=CAU" alt="">
+                                    </div>
+                                    <span class="nome-item fs-6 fw-light">Junior Aragão</span>
+                                </div>
+                                <i class="fa-solid fa-ellipsis me-2 d"></i>
+                            </div>
+                            <div class="imagem-post">
+                                <img src="http://pm1.narvii.com/7070/661b5b87d8720043e95ca44fbfd18e110e6df741r1-450-681v2_uhq.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="icons mt-3 d-flex justify-content-between ms-2">
+                            <div>
+                                <i class="fa-regular fa-heart fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-comment fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-paper-plane fa-lg d"></i>
+                            </div>
+                            <div class="me-2">
+                                <i class="fa-regular fa-bookmark fa-lg d"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2">
+                            <div class="container-img-post me-3">
+                                <img class="rounded-circle perfil-img" src="https://ef564920920608e03abb-7d34ef097b6ab6c586dfc84157128505.ssl.cf1.rackcdn.com/PostImagem/36734/foto-de-perfil-profissional_o1eh30s23km6j1lmm1k5r8cvinuj.JPG" alt="">
+                            </div>
+                            <div>
+                                <span>Curtido por marina, iuri ...</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-3 border border-circle p-1">
+                            <div>
+                                <i class="fa-regular fa-face-smile"></i>
+                                <span>Adicionar um comentário...</span>
+                            </div>
+                            <div class="fs-6 fw-bold d">Publicar</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="posts mt-3 border pb-2 pt-1">
+                    <div class="post">
+                        <div class="cabecalho d-flex justify-content-between flex-column">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex ms-2">
+                                    <div class="container-perfil">
+                                        <img class="rounded-circle perfil-img" src="https://ef564920920608e03abb-7d34ef097b6ab6c586dfc84157128505.ssl.cf1.rackcdn.com/PostImagem/36734/foto-de-perfil-profissional_o1eh30s23km6j1lmm1k5r8cvinuj.JPG" alt="">
+                                    </div>
+                                    <span class="nome-item fs-6 fw-light">Marcelo Carvalho</span>
+                                </div>
+                                <i class="fa-solid fa-ellipsis me-2 d"></i>
+                            </div>
+                            <div class="imagem-post">
+                                <img src="https://pm1.narvii.com/6339/d4ce6c7736d3be678cdd8e9d0bf9da4001df638b_hq.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="icons mt-3 d-flex justify-content-between ms-2">
+                            <div>
+                                <i class="fa-regular fa-heart fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-comment fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-paper-plane fa-lg d"></i>
+                            </div>
+                            <div class="me-2">
+                                <i class="fa-regular fa-bookmark fa-lg d"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2">
+                            <div class="container-img-post me-3">
+                                <img class="rounded-circle perfil-img" src="https://ef564920920608e03abb-7d34ef097b6ab6c586dfc84157128505.ssl.cf1.rackcdn.com/PostImagem/36734/foto-de-perfil-profissional_o1eh30s23km6j1lmm1k5r8cvinuj.JPG" alt="">
+                            </div>
+                            <div>
+                                <span>Curtido por marina, iuri ...</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-3 border border-circle p-1">
+                            <div>
+                                <i class="fa-regular fa-face-smile"></i>
+                                <span>Adicionar um comentário...</span>
+                            </div>
+                            <div class="fs-6 fw-bold d">Publicar</div>
+                        </div>
+                    </div>
+                </section>
+                <section class="posts mt-3 border pb-2 pt-1">
+                    <div class="post">
+                        <div class="cabecalho d-flex justify-content-between flex-column">
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex ms-2">
+                                    <div class="container-perfil">
+                                        <img class="rounded-circle perfil-img" src="https://www.wefashiontrends.com/wp-content/uploads/2019/03/pose-para-fotos-de-perfil.jpg" alt="">
+                                    </div>
+                                    <span class="nome-item fs-6 fw-light">Mariana Andrade</span>
+                                </div>
+                                <i class="fa-solid fa-ellipsis me-2 d"></i>
+                            </div>
+                            <div class="imagem-post">
+                                <img src="https://www.wefashiontrends.com/wp-content/uploads/2019/03/pose-para-fotos-de-perfil.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="icons mt-3 d-flex justify-content-between ms-2">
+                            <div>
+                                <i class="fa-regular fa-heart fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-comment fa-lg me-2 d"></i>
+                                <i class="fa-regular fa-paper-plane fa-lg d"></i>
+                            </div>
+                            <div class="me-2">
+                                <i class="fa-regular fa-bookmark fa-lg d"></i>
+                            </div>
+                        </div>
+                        <div class="d-flex ms-2">
+                            <div class="container-img-post me-3">
+                                <img class="rounded-circle perfil-img" src="https://ef564920920608e03abb-7d34ef097b6ab6c586dfc84157128505.ssl.cf1.rackcdn.com/PostImagem/36734/foto-de-perfil-profissional_o1eh30s23km6j1lmm1k5r8cvinuj.JPG" alt="">
+                            </div>
+                            <div>
+                                <span>Curtido por marina, iuri ...</span>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-between mt-3 border border-circle p-1">
+                            <div>
+                                <i class="fa-regular fa-face-smile"></i>
+                                <span>Adicionar um comentário...</span>
+                            </div>
+                            <div class="fs-6 fw-bold d">Publicar</div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <section class="extra">
+                <div>
+                    <div class="d-flex align-items-center justify-content-around">
+                        <div class="container-perfil-extra">
+                            <img class="rounded-circle perfil-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj95dVNObz0OyGHbJezMkrLsmzZTuyijI47w&usqp=CAU" alt="">
+                        </div>
+                        <div class="ms-3 mt-3">
+                            <span class="nome-item fs-6 fw-light">jr_aragão</span> 
+                            <p>Junior Aragão</p>
+                        </div>
+                        <div>
+                            <a href="#">Mudar</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <span class="text-muted ms-3">Sugestões para você</span>
+                </div>
+                <div class="mt-3">
+                    <div class="d-flex">
+                        <div class="container-perfil">
+                            <img class="rounded-circle perfil-img" src="data:image/jpeg;base64,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" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <span class="fw-light">Julia Alves</span>
+                            <p class="text-muted pit">Seguido por Gabriel, Iuri...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="container-perfil">
+                            <img class="rounded-circle perfil-img" src="https://cajamar.sp.gov.br/noticias/wp-content/uploads/sites/2/2021/07/site-vacinacao-33-anos.png" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <span class="fw-light">Carla Barbosa</span>
+                            <p class="text-muted pit">Seguido por Claudiney, Iuri...</p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="container-perfil">
+                            <img class="rounded-circle perfil-img" src="https://img.ibxk.com.br/2019/02/17/17124052466014.jpg" alt="">
+                        </div>
+                        <div class="ms-2">
+                            <span class="fw-light">Jõao da Silva</span>
+                            <p class="text-muted pit">Seguido por Marina, Pedro...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    
+
+    
+    <footer>
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+        </script>
+        <script src="https://kit.fontawesome.com/ea36f5afff.js" crossorigin="anonymous"></script>
+    </footer>
+</body>
+</html>
