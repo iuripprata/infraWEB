@@ -47,6 +47,8 @@ Dos 10 projetos necessários para a conclusão da nota da disciplina de programa
   - _Projeto onde se apresenta diversos blocos de imagens apresentando as fotografias tiradas por alguém em formatos criativos._
 - [:pushpin:	**TO DO LIST (score 25%)**](/Projeto11/readme.md)  :ballot_box_with_check:
   - _Site onde se cria uma lista de atividades com checkboxes para definir atividades terminadas ou não._
+ - [:pushpin:	**CLONAR SITE (score 15%)**](/Projeto12/readme.md)  :ballot_box_with_check:
+  - _Escolha de 3 sites e a clonagem de 1 ao vivo durante a atividade._
 
 ## :+1: Agradecimentos e Créditos
 Agradecimentos e créditos ao Bootstrap, por providenciar vários elementos dos nossos sites e garantir uma bela estrutura dos mesmos, e também aos templates estudados e usados destes sites:
