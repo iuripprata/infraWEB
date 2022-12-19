@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Vazamentos Mundo</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/faviconif.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@400;500&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS Files -->
+  <link href="assets/css/variables.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: ZenBlog - v1.2.1
+  * Template URL: https://bootstrapmade.com/zenblog-bootstrap-blog-template/
+  * Author: BootstrapMade.com
+  * License: https:///bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>VazyWorld</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Giro Rápido</a></li>
+          <li><a href="politica.html">Destaque</a></li>
+          <li class="dropdown"><a><span>Categorias</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="#esporte">Esporte</a></li>
+              <li><a href="#politica">Política</a></li>
+              <li><a href="#entretenimento">Entretenimento</a></li>
+              <li><a href="#mundo">Mundo</a></li>
+              <li><a href="#educacao">Educação</a></li>
+            </ul>
+          </li>
+
+          <li><a href="file:///C:/Users/marin/Desktop/infraWEB/Projeto05/portfolio.html">Sobre</a></li>
+          <li><a href="contact.html">Contatos</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <div class="position-relative">
+        <a href="https://pt-br.facebook.com/IFCeara/" class="mx-2"><span class="bi-facebook"></span></a>
+        <a href="https://twitter.com/IFCE_" class="mx-2"><span class="bi-twitter"></span></a>
+        <a href="https://www.instagram.com/ifceoficial/" class="mx-2"><span class="bi-instagram"></span></a>
+
+        <a href="#" class="mx-2 js-search-open"><span class="bi-search"></span></a>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+        <!-- ======= Search Form ======= -->
+        <div class="search-form-wrap js-search-form-wrap">
+          <form action="search-result.html" class="search-form">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisar">
+            <ul id="myUL">
+              <li><a href="#esporte">esporte</a></li>
+              <li><a href="#politica">politica</a></li>
+              <li><a href="#entretenimento">entretenimento</a></li>
+              <li><a href="#mundo">mundo</a></li>
+              <li><a href="#educacao">educação</a></li>
+            </ul>
+            <script>
+              function myFunction() {
+                // Declare variables
+                var input, filter, ul, li, a, i, txtValue;
+                input = document.getElementById('myInput');
+                filter = input.value.toUpperCase();
+                ul = document.getElementById("myUL");
+                li = ul.getElementsByTagName('li');
+              
+                // Loop through all list items, and hide those who don't match the search query
+                for (i = 0; i < li.length; i++) {
+                  a = li[i].getElementsByTagName("a")[0];
+                  txtValue = a.textContent || a.innerText;
+                  if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                  } else {
+                    li[i].style.display = "none";
+                  }
+                }
+              }
+              </script>
+            <button class="btn js-search-close"><span class="bi-x"></span></button>
+          </form>
+        </div><!-- End Search Form -->
+
+      </div>
+
+    </div>
+
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Hero Slider Section ======= -->
+    <section id="hero-slider" class="hero-slider">
+      <div class="container-md" data-aos="fade-in">
+        <div class="row">
+          <div class="col-12">
+            <div class="swiper sliderFeaturedPosts">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="esporte.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/imgdoisesporteslide.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>Fifa anuncia novo Mundial de Clubes com 32 times a partir de 2025</h2>
+                      <p>O presidente da Fifa, Gianni Infantino, anunciou nesta sexta-feira a criação de um novo Mundial de Clubes, a ser disputado a cada quatro anos, com 32 times. A primeira edição será em 2025, com sede ainda a ser definida.</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="politica.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/imgumpolitica.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>Orçamento secreto: destino dos recursos é 'recoberto por um manto de névoas', diz Rosa Weber</h2>
+                      <p>A presidente do Supremo Tribunal Federal (STF), ministra Rosa Weber, afirmou nesta quarta-feira (14) que o destino dos recursos das emendas de relator, conhecidas como “orçamento secreto”, é “recoberto por um manto de névoas”.</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="entretenimento.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/imgumentretenimentoslide.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>'Barbie' ganha primeiro trailer; filme com Margot Robbie e Ryan Gosling estreia em julho de 2023</h2>
+                      <p>O filme "Barbie" ganhou seu primeiro trailer nesta sexta-feira (16).</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="mundo.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/imgummundo.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>Orçamento secreto: destino dos recursos é 'recoberto por um manto de névoas', diz Rosa Weber</h2>
+                      <p>A atual presidente do Peru, Dina Boluarte, exigiu que o Congresso aprove a proposta para antecipar as eleições gerais no país. A declaração foi dada em uma entrevista coletiva neste sábado (17).</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="swiper-slide">
+                  <a href="educacao.html" class="img-bg d-flex align-items-end" style="background-image: url('assets/img/imgumeducacao.jpg');">
+                    <div class="img-bg-inner">
+                      <h2>Devido aos cortes orçamentários, UFSJ suspende funcionamento de restaurantes universitários nas férias</h2>
+                      <p>A Universidade Federal de São João del Rei (UFSJ) anunciou na sexta-feira (16) que os Restaurantes Universitários (RUs) ficarão fechados de 24 de dezembro a 5 de março de 2023, período de férias da instituição. A medida foi tomada devido aos cortes orçamentários.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="custom-swiper-button-next">
+                <span class="bi-chevron-right"></span>
+              </div>
+              <div class="custom-swiper-button-prev">
+                <span class="bi-chevron-left"></span>
+              </div>
+
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Hero Slider Section -->
+
+    <!-- ======= Post Grid Section ======= -->
+    <section id="posts" class="posts">
+      <div class="container" data-aos="fade-up">
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <div class="post-entry-1 lg">
+              <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/12/16/justica-revoga-prisao-preventiva-de-sergio-cabral-politico-pode-ser-solto-em-breve.ghtml"><img src="assets/img/post-landscape-1.jpg" alt="" class="img-fluid"></a>
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2><a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/12/16/justica-revoga-prisao-preventiva-de-sergio-cabral-politico-pode-ser-solto-em-breve.ghtml">STF revoga prisão preventiva de Sérgio Cabral; político pode ser solto em breve</a></h2>
+              <p class="mb-4 d-block">A 2ª Turma do Supremo Tribunal Federal (STF) decidiu revogar a ordem de prisão da Justiça Federal do Paraná contra Cabral, anular as decisões tomadas e enviar o caso para análise da Justiça Federal do Rio. O político foi preso em 2016, na época, suspeito de comandar uma organização criminosa que fraudava licitações e cobrava propina de empreiteiras.</p>
+
+              <div class="d-flex align-items-center author">
+                <div class="photo"><img src="assets/img/imgmarina.jpg" alt="" class="img-fluid"></div>
+                <div class="name">
+                  <h3 class="m-0 p-0">Marina Holanda</h3>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-8">
+            <div class="row g-5">
+              <div class="col-lg-4 border-start custom-border">
+                <div class="post-entry-1">
+                  <a href="esportedois.html"><img src="assets/img/imgquatroesporte.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="esportedois.html">Pelé posta carta nas redes e lembra eliminação da Seleção: "A nossa conquista foi apenas adiada"</a></h2>
+                </div>
+                <div class="post-entry-1">
+                  <a href="educacaodois.html"><img src="assets/img/imgdoiseducacao.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="educacaodois.html">UnB diz que governo federal liberou verbas bloqueadas</a></h2>
+                </div>
+                <div class="post-entry-1">
+                  <a href="mundodois.html"><img src="assets/img/imgdoismundo.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="mundodois.html">Hipopótamo tenta engolir criança em Uganda</a></h2>
+                </div>
+              </div>
+              <div class="col-lg-4 border-start custom-border">
+                <div class="post-entry-1">
+                  <a href="entretenimentodois.html"><img src="assets/img/imgdoisentretenimento.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="entretenimentodois.html">Jerry Adriani é revivido em single com registro inédito de música dada ao cantor por Nando Reis</a></h2>
+                </div>
+                <div class="post-entry-1">
+                  <a href="politicadois.html"><img src="assets/img/imgtrespolitica.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="politicadois.html">Lula pede a Alckmin para destravar vinda de Maduro ao Brasil</a></h2>
+                </div>
+                <div class="post-entry-1">
+                  <a href="https://ge.globo.com/futebol/times/corinthians/noticia/2022/12/17/corinthians-sonda-philippe-coutinho-mas-alto-salario-pode-dificultar-negociacao.ghtml"><img src="assets/img/imgtresesporte.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2><a href="https://ge.globo.com/futebol/times/corinthians/noticia/2022/12/17/corinthians-sonda-philippe-coutinho-mas-alto-salario-pode-dificultar-negociacao.ghtml">Corinthians sonda Philippe Coutinho, mas alto salário pode dificultar negociação</a></h2>
+                </div>
+              </div>
+
+              <!-- Trending Section -->
+              <div class="col-lg-4">
+
+                <div class="trending">
+                  <h3>Dicas Culturais em Fortaleza</h3>
+                  <ul class="trending-post">
+                    <li>
+                      <a href="http://www.dragaodomar.org.br">
+                        <span class="number">1</span>
+                        <h3>CENTRO DRAGÃO DO MAR DE ARTE E CULTURA</h3>
+                        <span class="author">Marina Holanda</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://linktr.ee/TheatroJosedeAlencar">
+                        <span class="number">2</span>
+                        <h3>THEATRO JOSÉ DE ALENCAR</h3>
+                        <span class="author">Gabriel Bento</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.secult.ce.gov.br/2013/01/03/museu-do-ceara/">
+                        <span class="number">3</span>
+                        <h3>MUSEU DO CEARÁ</h3>
+                        <span class="author">Yamim Torres</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.instagram.com/ocearashow/">
+                        <span class="number">4</span>
+                        <h3>CEARÁ SHOW</h3>
+                        <span class="author">Iuri Prata</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://linktr.ee/museudafotografiafortaleza">
+                        <span class="number">5</span>
+                        <h3>MUSEU DA FOTOGRAFIA FORTALEZA</h3>
+                        <span class="author">Claudiney Dutra</span>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div> <!-- End Trending Section -->
+            </div>
+          </div>
+
+        </div> <!-- End .row -->
+      </div>
+    </section> <!-- End Post Grid Section -->
+
+    <!-- ======= Esporte Category Section ======= -->
+    <section class="category-section" id="esporte">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Esporte</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+
+            <div class="d-lg-flex post-entry-2">
+              <a href="esporte.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+                <img src="assets/img/imgumesporte.jpg" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                <h3><a href="esporte.html">Fifa anuncia novo Mundial de Clubes com 32 times a partir de 2025</a></h3>
+                <p>O presidente da Fifa, Gianni Infantino, anunciou nesta sexta-feira a criação de um novo Mundial de Clubes, a ser disputado a cada quatro anos, com 32 times. A primeira edição será em 2025, com sede ainda a ser definida.</p>
+                <div class="d-flex align-items-center author">
+                  <div class="photo"><img src="assets/img/imgclaudiney.jpg" alt="" class="img-fluid"></div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Claudiney Dutra</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  <a href="https://ge.globo.com/futebol/selecoes/argentina/noticia/2022/12/18/messi-nao-precisou-ser-maradona-so-precisou-ser-messi-campeao-decisivo-capitao-e-genio.ghtml"><img src="assets/img/imgcincoesporte.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://ge.globo.com/futebol/selecoes/argentina/noticia/2022/12/18/messi-nao-precisou-ser-maradona-so-precisou-ser-messi-campeao-decisivo-capitao-e-genio.ghtml">Messi não precisou ser Maradona, só precisou ser Messi: campeão, decisivo, capitão e gênio</a></h2>
+                  <span class="author mb-3 d-block">Claudiney Dutra</span>
+                  <p class="mb-4 d-block">Camisa 10 faz dois gols na final da Copa e finalmente conquista o tão sonhado título</p>
+                </div>
+
+                <div class="post-entry-1">
+                  <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://ge.globo.com/futebol/copa-do-mundo/noticia/2022/12/18/galvao-bueno-se-emociona-em-despedida-da-copa-do-mundo-alguma-coisa-boa-fiz.ghtml">Galvão Bueno se emociona em despedida da Copa do Mundo: "Alguma coisa boa fiz"</a></h2>
+                  <span class="author mb-3 d-block">Claudiney Dutra</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <a href="esportedois.html"><img src="assets/img/imgquatroesporte.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="esportedois.html">Pelé posta carta nas redes e lembra eliminação da Seleção: "A nossa conquista foi apenas adiada"</a></h2>
+                  <span class="author mb-3 d-block">Claudiney Dutra</span>
+                  <p class="mb-4 d-block">Rei do Futebol está internado em São Paulo e ainda não tem previsão de alta</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/ap/copa-do-mundo/noticia/2022/12/15/desenhista-do-ap-retrata-em-forma-de-mangas-a-trajetoria-de-neymar-e-do-brasil-no-mundial-do-catar.ghtml">Desenhista do AP retrata em forma de mangás a trajetória de Neymar e do Brasil no Mundial do Catar</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/futebol/selecoes/franca/noticia/2022/12/18/protagonista-ate-na-derrota-mbappe-se-torna-um-dos-maiores-da-historia-da-copa-do-mundo.ghtml">Protagonista até na derrota, Mbappé se torna um dos maiores da história da Copa do Mundo</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/surfe/noticia/2022/12/18/balaram-stack-e-molly-picklum-conquistam-o-pipe-masters-2022.ghtml">Balaram Stack e Molly Picklum conquistam o Pipe Masters 2022</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/basquete/nba/noticia/2022/12/18/nba-sem-jayson-tatum-celtics-perdem-mais-uma-para-o-magic.ghtml">NBA: Sem Jayson Tatum, Celtics perdem mais uma para o Magic</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/rj/futebol/libertadores/noticia/2022/12/16/conmebol-divulga-ranking-de-clubes-com-palmeiras-na-vice-lideranca-e-flamengo-no-terceiro-lugar.ghtml">Conmebol divulga ranking de clubes com Palmeiras na vice-liderança e Flamengo no terceiro lugar</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://ge.globo.com/futebol/selecoes/franca/noticia/2022/12/16/jornal-frances-poe-pele-e-mbappe-lado-a-lado-em-capa-na-vespera-da-final.ghtml">Jornal francês põe Pelé e Mbappé lado a lado em capa na véspera da final</a></h2>
+              <span class="author mb-3 d-block">Claudiney Dutra</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Esporte Category Section -->
+
+    <!-- ======= Política Category Section ======= -->
+    <section class="category-section" id="politica">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Política</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9 order-md-2">
+
+            <div class="d-lg-flex post-entry-2">
+              <a href="politica.html" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
+                <img src="assets/img/imgumpolitica.jpg" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                <h3><a href="politica.html">Orçamento secreto: destino dos recursos é 'recoberto por um manto de névoas', diz Rosa Weber</a></h3>
+                <p>A presidente do Supremo Tribunal Federal (STF), ministra Rosa Weber, afirmou nesta quarta-feira (14) que o destino dos recursos das emendas de relator, conhecidas como “orçamento secreto”, é “recoberto por um manto de névoas”.</p>
+                <div class="d-flex align-items-center author">
+                  <div class="photo"><img src="assets/img/imgmarina.jpg" alt="" class="img-fluid"></div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Marina Holanda</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  <a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/12/16/justica-revoga-prisao-preventiva-de-sergio-cabral-politico-pode-ser-solto-em-breve.ghtml"><img src="assets/img/imgquatropolitica.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/rj/rio-de-janeiro/noticia/2022/12/16/justica-revoga-prisao-preventiva-de-sergio-cabral-politico-pode-ser-solto-em-breve.ghtml">STF revoga prisão preventiva de Sérgio Cabral; político pode ser solto em breve</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                  <p class="mb-4 d-block">A 2ª Turma do Supremo Tribunal Federal (STF) decidiu revogar a ordem de prisão da Justiça Federal do Paraná contra Cabral, anular as decisões tomadas e enviar o caso para análise da Justiça Federal do Rio. O político foi preso em 2016, na época, suspeito de comandar uma organização criminosa que fraudava licitações e cobrava propina de empreiteiras.</p>
+                </div>
+
+                <div class="post-entry-1">
+                  <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/politica/noticia/2022/12/18/gilmar-mendes-determina-que-recursos-para-pagamento-de-renda-minima-estao-fora-do-teto-de-gastos.ghtml">Recursos para pagamento de renda mínima estão fora do teto de gastos, determina Gilmar Mendes</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <a href="politicadois.html"><img src="assets/img/imgtrespolitica.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="politicadois.html">Lula pede a Alckmin para destravar vinda de Maduro ao Brasil</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                  <p class="mb-4 d-block">Portaria de 2019 barra entrada de membros do alto escalão do regime venezuelano ao Brasil. Equipe da transição avalia saídas jurídicas para o impasse.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/politica/noticia/2022/12/18/tarcisio-diz-que-teve-a-conta-no-twitter-invadida.ghtml">Tarcísio diz que teve a conta no Twitter invadida</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/politica/blog/gerson-camarotti/noticia/2022/12/17/haddad-convida-renan-filho-para-planejamento-e-lula-tera-missao-de-convencer-bancada-do-mdb.ghtml">Haddad sonda Renan Filho para Planejamento, e Lula terá missão de convencer bancada do MDB</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/economia/blog/ana-flor/post/2022/12/17/presidente-da-fiesp-recusa-convite-de-lula-para-ser-ministro-da-industria.ghtml">Presidente da Fiesp recusa convite de Lula para ser ministro da Indústria</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/politica/noticia/2022/12/17/proposta-de-juristas-preve-que-divulgacao-de-fake-news-e-ataque-as-eleicoes-podem-ensejar-impeachment-entenda.ghtml">Proposta de juristas prevê que divulgação de fake news e ataque às eleições podem ensejar impeachment; entenda</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/sp/sao-paulo/noticia/2022/12/16/falencia-de-alexandre-frota-comecou-com-divida-de-r-88-mil-no-cheque-especial-que-chegou-a-r-12-milhao.ghtml">Falência de Alexandre Frota começou com dívida de R$ 88 mil no cheque especial que chegou a R$ 1,2 milhão</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/politica/noticia/2022/12/18/psol-anuncia-decisao-de-integrar-base-de-lula-no-congresso-mas-sem-ocupar-cargos-no-governo.ghtml">PSOL anuncia decisão de integrar base de Lula no Congresso, mas sem ocupar cargos no governo</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Política Category Section -->
+
+    <!-- ======= Entretenimento Category Section ======= -->
+    <section class="category-section" id="entretenimento">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Entretenimento</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+
+            <div class="d-lg-flex post-entry-2">
+              <a href="entretenimento.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+                <img src="assets/img/imgumentretenimentoslide.jpg" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                <h3><a href="entretenimento.html">'Barbie' ganha primeiro trailer; ASSISTA</a></h3>
+                <p>O filme "Barbie" ganhou seu primeiro trailer nesta sexta-feira (16).</p>
+                <div class="d-flex align-items-center author">
+                  <div class="photo"><img src="assets/img/imgmarina.jpg" alt="" class="img-fluid"></div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Marina Holanda</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  <a href="https://g1.globo.com/pop-arte/ccxp/2022/noticia/2022/12/15/avatar-o-caminho-da-agua-evolui-tecnologia-enquanto-conta-historia-sobre-familia-diz-zoe-saldana.ghtml"><img src="assets/img/imgtresentretenimento.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/ccxp/2022/noticia/2022/12/15/avatar-o-caminho-da-agua-evolui-tecnologia-enquanto-conta-historia-sobre-familia-diz-zoe-saldana.ghtml">'Avatar: O Caminho da Água' evolui tecnologia enquanto conta história sobre família, diz Zoe Saldaña</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                  <p class="mb-4 d-block">Em entrevista, atriz e produtor Jon Landau falam sobre continuação, que estreia nesta quinta-feira (15), da maior bilheteria de todos os tempos.</p>
+                </div>
+
+                <div class="post-entry-1">
+                  <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/games/noticia/2022/12/09/por-que-os-eua-querem-impedir-compra-de-fabricante-de-games-activision-blizzard-pela-microsoft.ghtml">Por que os EUA querem impedir compra de fabricante de games Activision Blizzard pela Microsoft</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <a href="entretenimentodois.html"><img src="assets/img/imgdoisentretenimento.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="entretenimentodois.html">Jerry Adriani é revivido em single com registro inédito de música dada ao cantor por Nando Reis</a></h2>
+                  <span class="author mb-3 d-block">Marina Holanda</span>
+                  <p class="mb-4 d-block">Com a devida autorização, a gravação de Frases mais azuis por Jerry Adriani está sendo apresentada oficialmente, mais de 20 anos após o registro, em single lançado ontem, 16 de dezembro, com capa assinada por Ramon Duccini e com a demo inicial de Nando Reis no lado B.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/musica/lollapalooza/2022/noticia/2022/03/30/lollapalooza-2023-bts-blackpink-rihanna-sao-os-preferidos-dos-leitores-do-g1-para-proxima-edicao.ghtml">Lollapalooza 2023: BTS, Blackpink, Rihanna são os preferidos dos leitores do g1 para próxima edição</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/diversidade/noticia/2022/11/04/a-polemica-escolha-de-atriz-cisgenero-para-viver-icone-transgenero-indiana-no-cinema.ghtml">A polêmica escolha de atriz cisgênero para viver ícone transgênero indiana no cinema</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/cinema/oscar/2022/noticia/2022/04/08/will-smith-e-banido-do-oscar-e-todos-os-eventos-da-academia-por-10-anos.ghtml">Will Smith é banido por 10 anos da cerimônia do Oscar e outros eventos da Academia</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/tv-e-series/noticia/2022/12/14/stephen-twitch-boss-dj-do-programa-de-ellen-degeneres-morre-aos-40-anos.ghtml">Stephen 'tWitch' Boss, DJ e produtor do programa de Ellen Degeneres, morre aos 40 anos</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/ccxp/2022/noticia/2022/12/06/ccxp-2022-veja-principais-anuncios-e-trailers-da-edicao.ghtml">CCXP 2022: veja principais anúncios e trailers da edição</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pop-arte/tv-e-series/noticia/2022/11/25/hector-bonilla-ator-famoso-por-participacao-em-chaves-morre-aos-83-anos.ghtml">Héctor Bonilla, ator famoso por participação em 'Chaves', morre aos 83 anos</a></h2>
+              <span class="author mb-3 d-block">Marina Holanda</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Entretenimento Category Section -->
+
+    <!-- ======= Business Category Section ======= -->
+    <section class="category-section" id="mundo">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Mundo</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9 order-md-2">
+
+            <div class="d-lg-flex post-entry-2">
+              <a href="mundo.html" class="me-4 thumbnail d-inline-block mb-4 mb-lg-0">
+                <img src="assets/img/imgummundo.jpg" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                <h3><a href="mundo.html">Presidente do Peru descarta renúncia e insiste que Congresso antecipe eleições</a></h3>
+                <p>A atual presidente do Peru, Dina Boluarte, exigiu que o Congresso aprove a proposta para antecipar as eleições gerais no país. A declaração foi dada em uma entrevista coletiva neste sábado (17).</p>
+                <div class="d-flex align-items-center author">
+                  <div class="photo"><img src="assets/img/imggabriel.jpg" alt="" class="img-fluid"></div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Gabriel Bento</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  <a href="https://g1.globo.com/mundo/noticia/2022/12/18/papa-revela-que-assinou-carta-de-renuncia-para-o-caso-de-problemas-de-saude.ghtml"><img src="assets/img/imgtresmundo.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/mundo/noticia/2022/12/18/papa-revela-que-assinou-carta-de-renuncia-para-o-caso-de-problemas-de-saude.ghtml">Papa revela que assinou carta de renúncia para o caso de problemas de saúde</a></h2>
+                  <span class="author mb-3 d-block">Gabriel Bento</span>
+                  <p class="mb-4 d-block">Francisco, que completou 86 anos neste sábado (17), sofre com osteoartrite, uma condição que se caracteriza pelo desgaste da cartilagem das articulações e por alterações nos ossos.</p>
+                </div>
+
+                <div class="post-entry-1">
+                  <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/saude/noticia/2022/12/18/nova-york-e-a-polemica-das-internacoes-psiquiatricas-da-populacao-de-rua.ghtml">Nova York e a polêmica das internações psiquiátricas da população de rua</a></h2>
+                  <span class="author mb-3 d-block">Gabriel Bento</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <a href="mundodois.html"><img src="assets/img/imgdoismundo.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="mundodois.html">Hipopótamo tenta engolir criança em Uganda</a></h2>
+                  <span class="author mb-3 d-block">Gabriel Bento</span>
+                  <p class="mb-4 d-block">Menino de 2 anos foi salvo por pessoas que estavam perto. A criança mora a 800 metros de um lago onde vivem cerca de 6.000 hipopótamos.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/noticia/2022/12/16/vidro-de-aquario-gigante-estoura-em-berlim-e-1500-peixes-exoticos-caem-em-avenida-da-cidade.ghtml">Aquário gigante estoura em Berlim, e 1.500 peixes morrem</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/noticia/2022/12/18/turbulencia-em-voo-para-o-havai-deixa-11-pessoas-feridas-gravemente.ghtml">Turbulência em voo para o Havaí deixa 11 pessoas feridas gravemente</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/ucrania-russia/noticia/2022/12/16/as-mortes-e-os-danos-colossais-apos-ataque-russo-a-2a-maior-cidade-da-ucrania.ghtml">As mortes e os 'danos colossais' após ataque russo à 2ª maior cidade da Ucrânia</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/copa-do-catar/noticia/2022/12/17/qual-a-origem-da-rivalidade-entre-brasil-e-argentina-e-o-que-esta-mudando-nessa-rixa.ghtml">Qual a origem da rivalidade entre Brasil e Argentina — e o que está mudando nessa rixa</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/noticia/2022/12/17/alemanha-inaugura-seu-primeiro-terminal-de-gas-natural-liquefeito.ghtml">Alemanha inaugura seu primeiro terminal de gás natural liquefeito</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/mundo/noticia/2022/12/17/as-ultimas-virgens-juramentadas-da-albania-que-vivem-como-homens.ghtml">As últimas 'virgens juramentadas' da Albânia, que vivem como homens</a></h2>
+              <span class="author mb-3 d-block">Gabriel Bento</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Business Category Section -->
+
+    <!-- ======= Culture Category Section ======= -->
+    <section class="category-section" id="educacao">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header d-flex justify-content-between align-items-center mb-5">
+          <h2>Educação</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+
+            <div class="d-lg-flex post-entry-2">
+              <a href="educacao.html" class="me-4 thumbnail mb-4 mb-lg-0 d-inline-block">
+                <img src="assets/img/imgumeducacao.jpg" alt="" class="img-fluid">
+              </a>
+              <div>
+                <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                <h3><a href="educacao.html">Devido aos cortes orçamentários, UFSJ suspende funcionamento de restaurantes universitários nas férias</a></h3>
+                <p>A Universidade Federal de São João del Rei (UFSJ) anunciou na sexta-feira (16) que os Restaurantes Universitários (RUs) ficarão fechados de 24 de dezembro a 5 de março de 2023, período de férias da instituição. A medida foi tomada devido aos cortes orçamentários.</p>
+                <div class="d-flex align-items-center author">
+                  <div class="photo"><img src="assets/img/imgiuri.jpg" alt="" class="img-fluid"></div>
+                  <div class="name">
+                    <h3 class="m-0 p-0">Iuri Prata</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-4">
+                <div class="post-entry-1 border-bottom">
+                  <a href="https://g1.globo.com/mg/zona-da-mata/noticia/2022/12/16/ufv-altera-calendario-academico-de-2023-por-causa-de-atrasos-em-divulgacoes-do-mec.ghtml"><img src="assets/img/imgtreseducacao.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/mg/zona-da-mata/noticia/2022/12/16/ufv-altera-calendario-academico-de-2023-por-causa-de-atrasos-em-divulgacoes-do-mec.ghtml">UFV altera calendário acadêmico de 2023 por causa de atrasos em divulgações do MEC</a></h2>
+                  <span class="author mb-3 d-block">Iuri Prata</span>
+                  <p class="mb-4 d-block">As aulas que teriam início em 6 de março em Viçosa, Florestal e Rio Paranaíba passaram para o dia 20 de mesmo mês. Confira todas as datas para o próximo ano.</p>
+                </div>
+
+                <div class="post-entry-1">
+                  <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="https://g1.globo.com/educacao/noticia/2022/12/16/como-estudante-resolveu-problema-de-2-500-anos-do-sanscrito.ghtml">Como estudante resolveu problema de 2.500 anos do sânscrito</a></h2>
+                  <span class="author mb-3 d-block">Iuri Prata</span>
+                </div>
+              </div>
+              <div class="col-lg-8">
+                <div class="post-entry-1">
+                  <a href="educacaodois.html"><img src="assets/img/imgdoiseducacao.jpg" alt="" class="img-fluid"></a>
+                  <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                  <h2 class="mb-2"><a href="educacaodois.html">UnB diz que governo federal liberou verbas bloqueadas</a></h2>
+                  <span class="author mb-3 d-block">Iuri Prata</span>
+                  <p class="mb-4 d-block">Universidade afirmou que R$ 17 milhões foram restituídos. Dinheiro foi usado para pagar contas atrasadas de novembro, mas instituição afirma que não há orçamento para este mês.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/educacao/noticia/2022/12/15/harvard-nomeia-primeira-mulher-negra-para-ocupar-a-presidencia.ghtml">Harvard nomeia primeira mulher negra para ocupar a presidência</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/sp/campinas-regiao/educacao/noticia/2022/12/15/unicamp-2023-comissao-libera-respostas-esperadas-em-questoes-de-matematica-e-de-conhecimentos-especificos.ghtml">Unicamp 2023: comissão libera respostas esperadas em questões de matemática e de conhecimentos específicos</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/pb/paraiba/noticia/2022/12/14/filho-de-agricultores-conclui-mestrado-e-homenageia-pais-com-ensaio-fotografico-meus-maiores-mestres.ghtml">Filho de agricultores conclui mestrado e homenageia pais com ensaio fotográfico: 'Meus maiores mestres'</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/educacao/noticia/2022/12/13/escolas-civico-militares-tem-meta-eficacia-e-desempenho-desconhecidos-veja-6-pontos-sobre-a-bandeira-de-bolsonaro-na-educacao.ghtml">Escolas cívico-militares têm meta, eficácia e desempenho desconhecidos; veja 6 pontos sobre a bandeira de Bolsonaro na educação</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/sp/sao-carlos-regiao/educacao/noticia/2022/12/12/estudantes-da-ufscar-protestam-contra-cortes-e-bloqueios-de-verbas-feitos-pelo-governo-bolsonaro.ghtml">Estudantes da UFSCar protestam contra cortes e bloqueios de verbas feitos pelo governo Bolsonaro</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+
+            <div class="post-entry-1 border-bottom">
+              <div class="post-meta"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+              <h2 class="mb-2"><a href="https://g1.globo.com/educacao/noticia/2022/12/12/governo-federal-exoneracao-secretaria-de-alfabetizacao.ghtml">A 20 dias do fim, governo Bolsonaro troca comando da secretaria nacional de alfabetização</a></h2>
+              <span class="author mb-3 d-block">Iuri Prata</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Culture Category Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content">
+      <div class="container">
+
+        <div class="row g-5">
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Sobre VazyWorld</h3>
+            <p>Uma página de notícias criada com o intuito de informar os leitores sem custos adicionais e de forma dinâmica.</p>
+            <p><a href="afile:///C:/Users/marin/Desktop/infraWEB/Projeto05/portfolio.html" class="footer-link-more">Learn More</a></p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Navegação</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Página Inicial</a></li>
+              <li><a href="index.html"><i class="bi bi-chevron-right"></i> Giro Rápido</a></li>
+              <li><a href="politica.html"><i class="bi bi-chevron-right"></i> Destaque</a></li>
+              <li><a href="file:///C:/Users/marin/Desktop/infraWEB/Projeto05/portfolio.html"><i class="bi bi-chevron-right"></i> Sobre Nós</a></li>
+              <li><a href="contact.html"><i class="bi bi-chevron-right"></i> Contato</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h3 class="footer-heading">Categorias</h3>
+            <ul class="footer-links list-unstyled">
+              <li><a href="index.html#esporte"><i class="bi bi-chevron-right"></i> Esporte</a></li>
+                <li><a href="index.html#politica"><i class="bi bi-chevron-right"></i> Política</a></li>
+                <li><a href="index.html#entretenimento"><i class="bi bi-chevron-right"></i> Entretenimento</a></li>
+                <li><a href="index.html#mundo"><i class="bi bi-chevron-right"></i> Mundo</a></li>
+                <li><a href="index.html#educacao"><i class="bi bi-chevron-right"></i> Educação</a></li>
+
+
+            </ul>
+          </div>
+
+          <div class="col-lg-4">
+            <h3 class="footer-heading">Postagens Recentes</h3>
+
+            <ul class="footer-links footer-blog-entry list-unstyled">
+              <li>
+                <a href="esporte.html" class="d-flex align-items-center">
+                  <img src="assets/img/imgdoisesporte.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Esporte</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                    <span>Fifa anuncia novo Mundial de Clubes com 32 times a partir de 2025</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="politica.html" class="d-flex align-items-center">
+                  <img src="assets/img/imgumpolitica.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Política</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                    <span>Orçamento secreto: destino dos recursos é 'recoberto por um manto de névoas', diz Rosa Weber</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="entretenimento.html" class="d-flex align-items-center">
+                  <img src="assets/img/imgumentretenimento.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Entretenimento</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                    <span>'Barbie' ganha primeiro trailer; filme com Margot Robbie e Ryan Gosling estreia em julho de 2023</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="mundo.html" class="d-flex align-items-center">
+                  <img src="assets/img/imgummundo.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Mundo</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                    <span>Presidente do Peru descarta renúncia e insiste que Congresso antecipe eleições</span>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="educacao.html" class="d-flex align-items-center">
+                  <img src="assets/img/imgumeducacao.jpg" alt="" class="img-fluid me-3">
+                  <div>
+                    <div class="post-meta d-block"><span class="date">Educação</span> <span class="mx-1">&bullet;</span> <span>19 de Dezembro de 2022</span></div>
+                    <span>Devido aos cortes orçamentários, UFSJ suspende funcionamento de restaurantes universitários nas férias</span>
+                  </div>
+                </a>
+              </li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <div class="container">
+
+        <div class="row justify-content-between">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            <div class="copyright">
+              © Copyright <strong><span>VazyWorld</span></strong>. Todos os Direitos Reservados
+            </div>
+
+            <div class="credits">
+              <!-- All the links in the footer should remain intact. -->
+              <!-- You can delete the links only if you purchased the pro version. -->
+              <!-- Licensing information: https://bootstrapmade.com/license/ -->
+              <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/herobiz-bootstrap-business-template/ -->
+              Designed by <a>MarinaHolanda</a>
+            </div>
+
+          </div>
+
+          <div class="col-md-6">
+            <div class="social-links mb-3 mb-lg-0 text-center text-md-end">
+              <a href="https://twitter.com/IFCE_" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="https://pt-br.facebook.com/IFCeara/" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/ifceoficial/" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
