@@ -42,7 +42,7 @@ Dos 10 projetos necessários para a conclusão da nota da disciplina de programa
 - [:pushpin:	**Página de Blog ou Notícias (score 10%)**](/Projeto08/readme.md)  :newspaper:
   - _Página formada por blocos de notícias e eventos escritos e atualizados em tempo real._
 - [:pushpin:	**Site de Eventos (score 15%)**](/Projeto09/readme.md)  :memo:
-  - _Um site para eventos é um espaço dedicado a abrigar notícias sobre programação, formulários para inscrições e outros detalhes importantes. Por isso, ele é fundamental como um meio de comunicação entre a equipe de organização e seu público.._
+  - _Um site para eventos é um espaço dedicado a abrigar notícias sobre programação, formulários para inscrições e outros detalhes importantes. Por isso, ele é fundamental como um meio de comunicação entre a equipe de organização e seu público._
 - [:pushpin:	**Site de Fotografia (score 15%)**](/Projeto10/readme.md)  :camera_flash:
   - _Projeto onde se apresenta diversos blocos de imagens apresentando as fotografias tiradas por alguém em formatos criativos._
 - [:pushpin:	**TO DO LIST (score 25%)**](/Projeto11/readme.md)  :ballot_box_with_check:
