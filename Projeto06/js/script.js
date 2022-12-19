@@ -8,7 +8,7 @@ const main = document.getElementById('main');
 getTrending(API_URL);
 
 function getTrending(url) {
-    fetch(url).then(res => res.json()).then(data => {
+    fetch(url).then(Response => Response.json()).then(data => {
         console.log(data.results)
         showTrending(data.results);
     })
@@ -20,7 +20,7 @@ function showTrending(data){
     data.forEach(all => {
         const {title, poster_path, vote_average, overview} = trending;
         const allEl = document.createElement('div');
-        allEl.classList.add('all');
+        allEl.classList.add('trending');
         allEl.innerHTML = `
             <div class="card mb-3" style="max-width: 540px;" id="trending">
             <div class="row g-0">

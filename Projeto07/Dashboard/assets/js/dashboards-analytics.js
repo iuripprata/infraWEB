@@ -18,12 +18,12 @@
     totalRevenueChartOptions = {
       series: [
         {
-          name: '2021',
-          data: [18, 7, 15, 29, 18, 12, 9]
+          name: '202',
+          data: [13, 18, 9, 14, 5, 17, 15]
         },
         {
-          name: '2020',
-          data: [-13, -18, -9, -14, -5, -17, -15]
+          name: '2022',
+          data: [18, 14, 15, 29, 18, 12, 17]
         }
       ],
       chart: {
@@ -279,7 +279,7 @@
   const growthChartEl = document.querySelector('#growthChart'),
     growthChartOptions = {
       series: [78],
-      labels: ['Growth'],
+      labels: ['Eficiência'],
       chart: {
         height: 240,
         type: 'radialBar'
@@ -427,8 +427,8 @@
         width: 130,
         type: 'donut'
       },
-      labels: ['Electronic', 'Sports', 'Decor', 'Fashion'],
-      series: [85, 15, 50, 50],
+      labels: ['Rede Elétrica', 'Objetos', 'Construção', 'Encanamento'],
+      series: [29, 21, 35, 26],
       colors: [config.colors.primary, config.colors.secondary, config.colors.info, config.colors.success],
       stroke: {
         width: 5,
@@ -473,9 +473,9 @@
                 show: true,
                 fontSize: '0.8125rem',
                 color: axisColor,
-                label: 'Weekly',
+                label: 'Mensal',
                 formatter: function (w) {
-                  return '38%';
+                  return '20%';
                 }
               }
             }
@@ -558,7 +558,7 @@
         }
       },
       xaxis: {
-        categories: ['', 'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
+        categories: ['', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov'],
         axisBorder: {
           show: false
         },
